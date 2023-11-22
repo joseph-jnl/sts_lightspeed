@@ -30,3 +30,9 @@ For tree search and simulation of the popular rogue-like deckbuilder game Slay T
 **Build tips**
 * If your build fails with an error about not-return-only `constexpr` methods, ensure your compiler supports c++17.
 * If CLion shows an error about not finding python libs when loading the cmake project, try opening CLion from the msys2 shell.
+* "does not contain a CMakeLists.txt file" errors may require you to update the json/pybind11 submodules via `git submodule update --init --recursive`
+
+**Linux build**
+* cd to directory with CMakeLists.txt
+* `cmake .`
+* `make`
